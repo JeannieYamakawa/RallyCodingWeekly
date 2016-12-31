@@ -1,3 +1,11 @@
+common errors:
+1. not including export statements (error message will say something is null, undefined, or boolean)
+2. not including curly braces around components/properties being included in import statements. happens frequently in action creators. there will be no error message because it's a valid statement without them. console log the thing you're importing within the action creator to see what it's representing.
+3. 'uncaught in promise type error' means there's an error that occurred inside of a promise. so check your promises for syntax.
+4. 'objects are not valid as a React object' means you're probably passing in the payload something that's trapped inside of an array.
+
+
+
 #RallyCoding
 
 

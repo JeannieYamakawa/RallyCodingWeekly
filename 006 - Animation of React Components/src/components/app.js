@@ -41,6 +41,7 @@ export default class App extends Component {
       <div>
         <button onClick={this.onAddClick.bind(this)}>Add</button>
         <ul className="list-group">
+            {/* the ReactCSSTransitionGroup is just a JSX element like any other ...see transitions at top of render method */}
           <ReactCSSTransitionGroup {...transitionOptions}>
             {this.renderQuotes()}
           </ReactCSSTransitionGroup>
